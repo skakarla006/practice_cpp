@@ -1,6 +1,9 @@
 #pragma once
 
+#include<iostream>
 class ComplexPolar;
+
+using namespace std;
 
 class ComplexNumber{
     private:

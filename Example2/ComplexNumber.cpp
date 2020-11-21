@@ -1,7 +1,7 @@
 #include "ComplexNumber.h"
 
 ComplexNumber::ComplexNumber(){
-    cout<< "Default constructor" << endl;
+    cout<< "Default ComplexNumber constructor" << endl;
 }
 
 ComplexNumber::ComplexNumber(float realNumber, float imaginaryNumber): realNumber(realNumber), imaginaryNumber(imaginaryNumber){
