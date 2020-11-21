@@ -20,5 +20,6 @@ class ComplexNumber{
         float getImaginaryNumber() const;
         void print() const;
         friend ComplexNumber add2types(ComplexNumber& complexNumber, ComplexPolar& complexPolar);
+        ~ComplexNumber();
 };
 

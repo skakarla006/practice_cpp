@@ -10,28 +10,28 @@ ComplexPolar::ComplexPolar(float length, float angle):length(length), angle(angl
 }
 
 void ComplexPolar::setComplexPolar(float length, float angle){
-    ComplexPolar::length = length;
-    ComplexPolar::angle = angle;
+    this->length = length;
+    this->angle = angle;
 }
 
 void ComplexPolar::setLength(float length){
-    ComplexPolar::length = length;
+    this->length = length;
 }
 
 void ComplexPolar::setAngle(float angle){
-    ComplexPolar::angle = angle;
+    this->angle = angle;
 }
 
 float ComplexPolar::getLength() const{
-    return ComplexPolar::length;
+    return this->length;
 }
 
 float ComplexPolar::getAngle() const{
-    return ComplexPolar::angle;
+    return this->angle;
 }
 
 void ComplexPolar::print() const{
-    cout<< "Length: " << ComplexPolar::length << "Angle: " <<  ComplexPolar::angle << endl;
+    cout<< "Length: " << this->length << "Angle: " <<  this->angle << endl;
 }
 
 bool ComplexPolar::operator==(ComplexNumber complexNumber){

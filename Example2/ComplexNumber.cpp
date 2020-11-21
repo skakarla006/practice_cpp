@@ -32,3 +32,7 @@ float ComplexNumber::getImaginaryNumber() const{
 void ComplexNumber::print() const{
     cout<< "Real Number: " << ComplexNumber::realNumber << "Imaginary Number: " << ComplexNumber::imaginaryNumber << endl;
 }
+
+ComplexNumber::~ComplexNumber(){
+    cout << "Destructor called" << endl;
+}
