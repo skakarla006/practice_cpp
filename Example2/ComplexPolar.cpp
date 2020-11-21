@@ -1,4 +1,5 @@
 #include "ComplexPolar.h"
+#include <math.h>
 
 ComplexPolar::ComplexPolar(){
     cout<< "Default ComplexPolar constructor" << endl;
@@ -31,4 +32,12 @@ float ComplexPolar::getAngle() const{
 
 void ComplexPolar::print() const{
     cout<< "Length: " << ComplexPolar::length << "Angle: " <<  ComplexPolar::angle << endl;
+}
+
+bool ComplexPolar::operator==(ComplexNumber complexNumber){
+    return ((round(length*cos(angle * M_PI/180)) == complexNumber.getRealNumber()) && (round(length*sin(angle*M_PI/180)) == complexNumber.getImaginaryNumber()));
+}
+
+ComplexNumber ComplexPolar::convert(){
+    return ComplexNumber(round(length*cos(angle* M_PI/180)), round(length*sin(angle *M_PI/180)));
 }

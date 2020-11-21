@@ -1,7 +1,7 @@
 #pragma once
 
 #include<iostream>
-class ComplexNumber;
+#include "ComplexNumber.h"
 using namespace std;
 
 class ComplexPolar{
@@ -18,6 +18,8 @@ class ComplexPolar{
         float getLength() const;
         float getAngle() const;
         void print() const;
+        bool operator==(ComplexNumber complexNumber);
+        ComplexNumber convert();
         friend ComplexNumber add2types(ComplexNumber& complexNumber, ComplexPolar& complexPolar);
 };
 
